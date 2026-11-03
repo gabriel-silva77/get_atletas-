@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de atletas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/post.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de atletas</h1>
+      <p>Preencha os dados abaixo!!!</p>
+    </header>
+    <main>  
+      <section>
+        <p><a href="../pages/get.html">Ver atletas cadastrados</a></p>
+        <h2>Novo atleta</h2>
+
+        <form id="form-atleta">
+          <label for="title">Nome do atleta: </label>
+          <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+          <label for="esporte">esporte: </label>
+          <input id="esporte" name="esporte" type="text" required />
+
+          <label for="pais">pais: </label>
+          <input id="pais" name="pais" type="text" required />
+
+          <label for="idade">idade: </label>
+          <input id="idade" name="idade" type="number" required />
+
+          <label for="conquistas">conquistas: </label>
+          <input id="conquistas" name="conquistas" type="text" required />
+
+          <label for="imageUrl">URL da imagem (opcional): </label>
+          <input id="imageUrl" name="imageUrl" type="url" />
+
+          <button type="submit">Cadastrar atleta</button>
+        </form>
+
+        <p id="resposta"></p>
+      </section>
+    </main>
+  </body>
+</html>
